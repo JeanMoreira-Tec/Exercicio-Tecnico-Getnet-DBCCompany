@@ -1,0 +1,5 @@
+package apiTesteComRestAssured;
+
+public class GerenciarUsuario {
+
+}

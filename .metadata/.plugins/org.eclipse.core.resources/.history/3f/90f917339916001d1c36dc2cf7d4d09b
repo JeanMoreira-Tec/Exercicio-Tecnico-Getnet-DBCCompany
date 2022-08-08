@@ -1,0 +1,23 @@
+package apiTesteComRestAssured;
+
+import org.testng.Assert;
+import org.testng.annotations.Test;
+
+import io.restassured.RestAssured;
+import io.restassured.response.Response;
+
+public class GerenciarUsuario {
+	
+	@Test
+	public void getRequest() {
+		
+		String url = "https://reqres.in/api/users";
+		
+		Response response = RestAssured.post(url);
+		
+		Assert.assertEquals(response.getStatusCode(), 201, "Estatus Code Esperado");
+
+		
+	}
+
+}

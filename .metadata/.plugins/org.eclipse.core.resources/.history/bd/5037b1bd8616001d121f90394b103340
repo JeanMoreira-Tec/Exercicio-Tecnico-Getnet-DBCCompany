@@ -1,0 +1,14 @@
+package apiTesteComRestAssured;
+
+import org.testng.annotations.Test;
+import org.junit.Test;
+
+public class CriaUsuario {
+	
+	@Test
+	public void getRequest() {
+		
+		
+	}
+
+}

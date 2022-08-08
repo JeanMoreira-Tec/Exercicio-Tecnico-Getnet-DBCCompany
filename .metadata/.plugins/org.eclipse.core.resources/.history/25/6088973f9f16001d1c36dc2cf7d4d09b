@@ -1,0 +1,79 @@
+package apiTesteComRestAssured;
+
+import org.testng.Assert;
+import org.testng.annotations.Test;
+
+import io.restassured.RestAssured;
+import io.restassured.response.Response;
+
+public class GerenciarUsuario {
+	
+	@Test
+	public void postCriaUsuario() {
+		
+		String url = "https://reqres.in/api/users";
+		String contentType = "application/json";
+		String bodyData = "{\r\n"
+				+ "  \"username\": \"Eve Holt\",\r\n"
+				+ "  \"email\": \"eve.holt@reqres.in\",\r\n"
+				+ "  \"password\": \"cityslicka\"\r\n"
+				+ "}";
+		
+		Response response = RestAssured.given().contentType(contentType).body(bodyData).when().post(url).then().extract().response();
+		
+		Assert.assertEquals(response.getStatusCode(), 201, "Estatus Code Esperado");
+		String username = response.jsonPath().get("username");
+		Assert.assertEquals(username, "Eve Holt", "Nome Esperado");
+
+	}
+	
+	@Test
+	public void postRegistrarUsuario() {
+		
+		String url = "https://reqres.in/api/register";
+		String contentType = "application/json";
+		String bodyData = "{\r\n"
+				+ "    \"email\": \"eve.holt@reqres.in\",\r\n"
+				+ "    \"password\": \"pistol\"\r\n"
+				+ "}";
+		
+		Response response = RestAssured.given().contentType(contentType).body(bodyData).when().post(url).then().extract().response();
+		
+		Assert.assertEquals(response.getStatusCode(), 200, "Estatus Code Esperado");
+		String id = response.jsonPath().get("name");
+		Assert.assertEquals(id, 4, "id Esperado");
+
+	}
+	
+	@Test
+	public void postRegistrarUsuarioErro() {
+		
+		String url = "https://reqres.in/api/register";
+		String contentType = "application/json";
+		String bodyData = "{\r\n"
+				+ "    \"email\": \"eve.holt@reqres.in\",\r\n"
+				+ "    \"password\": \"pistol\"\r\n"
+				+ "}";
+		
+		Response response = RestAssured.given().contentType(contentType).body(bodyData).when().post(url).then().extract().response();
+		
+		Assert.assertEquals(response.getStatusCode(), 400, "Estatus Code Esperado");
+		String error = response.jsonPath().get("name");
+		Assert.assertEquals(error, "Missing password", "Mensagem de erro");
+
+	}
+	
+	
+	
+	
+	
+	@Test
+	public void postRegistrarUsuario11() {
+		
+		String url = "https://reqres.in/api//register";
+		
+		Response response = RestAssured.post(url);
+		
+		Assert.assertEquals(response.getStatusCode(), 200, "Estatus Code Esperado");
+
+}}

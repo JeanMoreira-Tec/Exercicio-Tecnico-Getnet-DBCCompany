@@ -1,0 +1,37 @@
+package apiTesteComRestAssured;
+
+import org.testng.Assert;
+import org.testng.annotations.Test;
+
+import io.restassured.RestAssured;
+import io.restassured.response.Response;
+
+public class GerenciarUsuario {
+	
+	@Test
+	public void postCriaUsuario() {
+		
+		String url = "https://reqres.in/api/users";
+		String contentType = "application/json";
+		String bodyData = "{\r\n"
+				+ "  \"username\": \"Eve Holt\",\r\n"
+				+ "  \"email\": \"eve.holt@reqres.in\",\r\n"
+				+ "  \"password\": \"cityslicka\"\r\n"
+				+ "}";
+		
+		Response response = RestAssured.post(url);
+		
+		Assert.assertEquals(response.getStatusCode(), 201, "Estatus Code Esperado");
+
+	}
+	
+	@Test
+	public void postRegistrarUsuario() {
+		
+		String url = "https://reqres.in/api//register";
+		
+		Response response = RestAssured.post(url);
+		
+		Assert.assertEquals(response.getStatusCode(), 200, "Estatus Code Esperado");
+
+}}

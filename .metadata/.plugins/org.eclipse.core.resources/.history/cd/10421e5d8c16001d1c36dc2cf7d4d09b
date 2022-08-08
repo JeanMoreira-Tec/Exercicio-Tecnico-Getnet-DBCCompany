@@ -1,0 +1,19 @@
+package apiTesteComRestAssured;
+
+public class CriaUsuario {
+	
+	@Test
+	public void getRequest() {
+		
+		String url = "https://reqres.in/api/users;";
+		
+		Response response = RestAssured.post(url);
+		
+		
+		
+		
+				
+		
+	}
+
+}

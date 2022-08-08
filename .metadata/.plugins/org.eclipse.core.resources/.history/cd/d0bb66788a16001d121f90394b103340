@@ -1,0 +1,25 @@
+package apiTesteComRestAssured;
+
+import org.junit.Test;
+
+//import org.testng.Assert;
+//import org.testng.annotations.Test;
+
+import io.restassured.RestAssured;
+import io.restassured.response.Response;
+
+
+public class CriaUsuario {
+	
+	@Test
+	public void getRequest() {
+		
+		String url = "https://reqres.in/api/users;";
+		
+		Response response = RestAssured.post(url);
+		
+				
+		
+	}
+
+}

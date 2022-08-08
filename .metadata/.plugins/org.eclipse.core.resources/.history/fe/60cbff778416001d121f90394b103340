@@ -1,0 +1,13 @@
+package apiTesteComRestAssured;
+
+import org.testing.Assert;
+
+import io.restassured.RestAssured;
+
+import io.restassured.response.Response
+
+public class CriaUsuario {
+	
+	public void
+
+}
