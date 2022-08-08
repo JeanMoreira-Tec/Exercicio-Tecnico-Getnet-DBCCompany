@@ -5,7 +5,7 @@
     <classes>
       <class name="apiTesteComRestAssured.GerenciarUsuario">
         <methods>
-          <include name="getBuscaUsuario"/>
+          <include name="patchAtualizaUsuario"/>
         </methods>
       </class> <!-- apiTesteComRestAssured.GerenciarUsuario -->
     </classes>

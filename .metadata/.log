@@ -8809,3 +8809,324 @@ java -ea -classpath C:\Users\Jean Moreira\eclipse\jee-2021-09\eclipse\configurat
   Class:     org.testng.remote.RemoteTestNG
   Args:      -serport 50427 -protocol json -d D:\Automação\Getnet\apiTesteComRestAssured\test-output C:\Users\JEANMO~1\AppData\Local\Temp\testng-eclipse--1639677897\testng-customsuite.xml
 java -ea -classpath C:\Users\Jean Moreira\eclipse\jee-2021-09\eclipse\configuration\org.eclipse.osgi\938\0\.cp\lib\testng-remote.jar:D:\Automação\Getnet\apiTesteComRestAssured\target\test-classes:D:\Automação\Getnet\apiTesteComRestAssured\target\classes:C:\Users\Jean Moreira\.p2\pool\plugins\org.junit_4.13.0.v20200204-1500.jar:C:\Users\Jean Moreira\.p2\pool\plugins\org.hamcrest.core_1.3.0.v20180420-1519.jar:C:\Users\Jean Moreira\.m2\repository\io\rest-assured\rest-assured\4.2.0\rest-assured-4.2.0.jar:C:\Users\Jean Moreira\.m2\repository\org\codehaus\groovy\groovy\2.5.8\groovy-2.5.8.jar:C:\Users\Jean Moreira\.m2\repository\org\codehaus\groovy\groovy-xml\2.5.8\groovy-xml-2.5.8.jar:C:\Users\Jean Moreira\.m2\repository\org\apache\httpcomponents\httpclient\4.5.3\httpclient-4.5.3.jar:C:\Users\Jean Moreira\.m2\repository\org\apache\httpcomponents\httpcore\4.4.6\httpcore-4.4.6.jar:C:\Users\Jean Moreira\.m2\repository\commons-logging\commons-logging\1.2\commons-logging-1.2.jar:C:\Users\Jean Moreira\.m2\repository\commons-codec\commons-codec\1.9\commons-codec-1.9.jar:C:\Users\Jean Moreira\.m2\repository\org\apache\httpcomponents\httpmime\4.5.3\httpmime-4.5.3.jar:C:\Users\Jean Moreira\.m2\repository\org\hamcrest\hamcrest\2.1\hamcrest-2.1.jar:C:\Users\Jean Moreira\.m2\repository\org\ccil\cowan\tagsoup\tagsoup\1.2.1\tagsoup-1.2.1.jar:C:\Users\Jean Moreira\.m2\repository\io\rest-assured\json-path\4.2.0\json-path-4.2.0.jar:C:\Users\Jean Moreira\.m2\repository\org\codehaus\groovy\groovy-json\2.5.8\groovy-json-2.5.8.jar:C:\Users\Jean Moreira\.m2\repository\io\rest-assured\rest-assured-common\4.2.0\rest-assured-common-4.2.0.jar:C:\Users\Jean Moreira\.m2\repository\io\rest-assured\xml-path\4.2.0\xml-path-4.2.0.jar:C:\Users\Jean Moreira\.m2\repository\org\apache\commons\commons-lang3\3.4\commons-lang3-3.4.jar:C:\Users\Jean Moreira\.m2\repository\jakarta\xml\bind\jakarta.xml.bind-api\2.3.2\jakarta.xml.bind-api-2.3.2.jar:C:\Users\Jean Moreira\.m2\repository\jakarta\activation\jakarta.activation-api\1.2.1\jakarta.activation-api-1.2.1.jar:C:\Users\Jean Moreira\.m2\repository\com\sun\xml\bind\jaxb-osgi\2.3.0.1\jaxb-osgi-2.3.0.1.jar:C:\Users\Jean Moreira\.m2\repository\org\apache\sling\org.apache.sling.javax.activation\0.1.0\org.apache.sling.javax.activation-0.1.0.jar:C:\Users\Jean Moreira\.m2\repository\javax\activation\activation\1.1.1\activation-1.1.1.jar:C:\Users\Jean Moreira\.m2\repository\org\testng\testng\7.1.0\testng-7.1.0.jar:C:\Users\Jean Moreira\.m2\repository\com\beust\jcommander\1.72\jcommander-1.72.jar:C:\Users\Jean Moreira\.m2\repository\com\google\inject\guice\4.1.0\guice-4.1.0-no_aop.jar:C:\Users\Jean Moreira\.m2\repository\javax\inject\javax.inject\1\javax.inject-1.jar:C:\Users\Jean Moreira\.m2\repository\aopalliance\aopalliance\1.0\aopalliance-1.0.jar:C:\Users\Jean Moreira\.m2\repository\com\google\guava\guava\19.0\guava-19.0.jar:C:\Users\Jean Moreira\.m2\repository\org\yaml\snakeyaml\1.21\snakeyaml-1.21.jar org.testng.remote.RemoteTestNG -serport 50427 -protocol json -d D:\Automação\Getnet\apiTesteComRestAssured\test-output C:\Users\JEANMO~1\AppData\Local\Temp\testng-eclipse--1639677897\testng-customsuite.xml
+
+!ENTRY org.eclipse.ui.ide 4 4 2022-08-08 14:06:52.359
+!MESSAGE Not properly disposed SWT resource
+!STACK 0
+java.lang.Error: SWT Resource was not properly disposed
+	at org.eclipse.swt.graphics.Resource.initNonDisposeTracking(Resource.java:172)
+	at org.eclipse.swt.graphics.Resource.<init>(Resource.java:120)
+	at org.eclipse.swt.graphics.Image.<init>(Image.java:683)
+	at org.eclipse.jface.resource.URLImageDescriptor.createImage(URLImageDescriptor.java:274)
+	at org.eclipse.jface.resource.ImageDescriptor.createImage(ImageDescriptor.java:287)
+	at org.eclipse.jface.resource.ImageDescriptor.createImage(ImageDescriptor.java:265)
+	at org.testng.eclipse.ui.AbstractTab.initImages(AbstractTab.java:499)
+	at org.testng.eclipse.ui.AbstractTab.createTabControl(AbstractTab.java:166)
+	at org.testng.eclipse.ui.TestRunnerViewPart.createTabControl(TestRunnerViewPart.java:724)
+	at org.testng.eclipse.ui.TestRunnerViewPart.loadTestRunTabs(TestRunnerViewPart.java:715)
+	at org.testng.eclipse.ui.TestRunnerViewPart.createTestRunTabs(TestRunnerViewPart.java:675)
+	at org.testng.eclipse.ui.TestRunnerViewPart.createPartControl(TestRunnerViewPart.java:801)
+	at org.eclipse.ui.internal.e4.compatibility.CompatibilityPart.createPartControl(CompatibilityPart.java:158)
+	at org.eclipse.ui.internal.e4.compatibility.CompatibilityView.createPartControl(CompatibilityView.java:155)
+	at org.eclipse.ui.internal.e4.compatibility.CompatibilityPart.create(CompatibilityPart.java:365)
+	at jdk.internal.reflect.GeneratedMethodAccessor82.invoke(Unknown Source)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.eclipse.e4.core.internal.di.MethodRequestor.execute(MethodRequestor.java:58)
+	at org.eclipse.e4.core.internal.di.InjectorImpl.processAnnotated(InjectorImpl.java:995)
+	at org.eclipse.e4.core.internal.di.InjectorImpl.processAnnotated(InjectorImpl.java:960)
+	at org.eclipse.e4.core.internal.di.InjectorImpl.internalInject(InjectorImpl.java:140)
+	at org.eclipse.e4.core.internal.di.InjectorImpl.internalMake(InjectorImpl.java:403)
+	at org.eclipse.e4.core.internal.di.InjectorImpl.make(InjectorImpl.java:330)
+	at org.eclipse.e4.core.contexts.ContextInjectionFactory.make(ContextInjectionFactory.java:202)
+	at org.eclipse.e4.ui.internal.workbench.ReflectionContributionFactory.createFromBundle(ReflectionContributionFactory.java:91)
+	at org.eclipse.e4.ui.internal.workbench.ReflectionContributionFactory.doCreate(ReflectionContributionFactory.java:60)
+	at org.eclipse.e4.ui.internal.workbench.ReflectionContributionFactory.create(ReflectionContributionFactory.java:42)
+	at org.eclipse.e4.ui.workbench.renderers.swt.ContributedPartRenderer.createWidget(ContributedPartRenderer.java:132)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.createWidget(PartRenderingEngine.java:994)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.safeCreateGui(PartRenderingEngine.java:658)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$1.run(PartRenderingEngine.java:543)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:45)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.createGui(PartRenderingEngine.java:527)
+	at org.eclipse.e4.ui.workbench.renderers.swt.ElementReferenceRenderer.createWidget(ElementReferenceRenderer.java:73)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.createWidget(PartRenderingEngine.java:994)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.safeCreateGui(PartRenderingEngine.java:658)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.safeCreateGui(PartRenderingEngine.java:762)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$2.run(PartRenderingEngine.java:727)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:45)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.createGui(PartRenderingEngine.java:711)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.subscribeTopicToBeRendered(PartRenderingEngine.java:161)
+	at jdk.internal.reflect.GeneratedMethodAccessor79.invoke(Unknown Source)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.eclipse.e4.core.internal.di.MethodRequestor.execute(MethodRequestor.java:58)
+	at org.eclipse.e4.core.di.internal.extensions.EventObjectSupplier$DIEventHandler.handleEvent(EventObjectSupplier.java:92)
+	at org.eclipse.equinox.internal.event.EventHandlerWrapper.handleEvent(EventHandlerWrapper.java:205)
+	at org.eclipse.equinox.internal.event.EventHandlerTracker.dispatchEvent(EventHandlerTracker.java:203)
+	at org.eclipse.equinox.internal.event.EventHandlerTracker.dispatchEvent(EventHandlerTracker.java:1)
+	at org.eclipse.osgi.framework.eventmgr.EventManager.dispatchEvent(EventManager.java:228)
+	at org.eclipse.osgi.framework.eventmgr.ListenerQueue.dispatchEventSynchronous(ListenerQueue.java:151)
+	at org.eclipse.equinox.internal.event.EventAdminImpl.dispatchEvent(EventAdminImpl.java:133)
+	at org.eclipse.equinox.internal.event.EventAdminImpl.sendEvent(EventAdminImpl.java:75)
+	at org.eclipse.equinox.internal.event.EventComponent.sendEvent(EventComponent.java:44)
+	at org.eclipse.e4.ui.services.internal.events.EventBroker.send(EventBroker.java:55)
+	at org.eclipse.e4.ui.internal.workbench.UIEventPublisher.notifyChanged(UIEventPublisher.java:63)
+	at org.eclipse.emf.common.notify.impl.BasicNotifierImpl.eNotify(BasicNotifierImpl.java:424)
+	at org.eclipse.e4.ui.model.application.ui.impl.UIElementImpl.setToBeRendered(UIElementImpl.java:314)
+	at org.eclipse.e4.ui.internal.workbench.ModelServiceImpl.showElementInWindow(ModelServiceImpl.java:655)
+	at org.eclipse.e4.ui.internal.workbench.ModelServiceImpl.bringToTop(ModelServiceImpl.java:624)
+	at org.eclipse.e4.ui.internal.workbench.PartServiceImpl.delegateBringToTop(PartServiceImpl.java:786)
+	at org.eclipse.e4.ui.internal.workbench.PartServiceImpl.activate(PartServiceImpl.java:757)
+	at org.eclipse.e4.ui.internal.workbench.PartServiceImpl.activate(PartServiceImpl.java:679)
+	at org.eclipse.e4.ui.internal.workbench.PartServiceImpl.activate(PartServiceImpl.java:674)
+	at org.eclipse.e4.ui.internal.workbench.PartServiceImpl.showPart(PartServiceImpl.java:1251)
+	at org.eclipse.ui.internal.WorkbenchPage.showPart(WorkbenchPage.java:1252)
+	at org.eclipse.ui.internal.WorkbenchPage.busyShowView(WorkbenchPage.java:1240)
+	at org.eclipse.ui.internal.WorkbenchPage.lambda$11(WorkbenchPage.java:4249)
+	at org.eclipse.swt.custom.BusyIndicator.showWhile(BusyIndicator.java:74)
+	at org.eclipse.ui.internal.WorkbenchPage.showView(WorkbenchPage.java:4247)
+	at org.eclipse.ui.internal.WorkbenchPage.showView(WorkbenchPage.java:4229)
+	at org.testng.eclipse.TestNGPlugin.showTestRunnerViewPartInActivePage(TestNGPlugin.java:254)
+	at org.testng.eclipse.TestNGPlugin.connectTestRunner(TestNGPlugin.java:227)
+	at org.testng.eclipse.TestNGPlugin$2.run(TestNGPlugin.java:218)
+	at org.eclipse.swt.widgets.RunnableLock.run(RunnableLock.java:40)
+	at org.eclipse.swt.widgets.Synchronizer.runAsyncMessages(Synchronizer.java:185)
+	at org.eclipse.swt.widgets.Display.runAsyncMessages(Display.java:4029)
+	at org.eclipse.swt.widgets.Display.readAndDispatch(Display.java:3629)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$5.run(PartRenderingEngine.java:1150)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:338)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.run(PartRenderingEngine.java:1041)
+	at org.eclipse.e4.ui.internal.workbench.E4Workbench.createAndRunUI(E4Workbench.java:155)
+	at org.eclipse.ui.internal.Workbench.lambda$3(Workbench.java:644)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:338)
+	at org.eclipse.ui.internal.Workbench.createAndRunWorkbench(Workbench.java:551)
+	at org.eclipse.ui.PlatformUI.createAndRunWorkbench(PlatformUI.java:156)
+	at org.eclipse.ui.internal.ide.application.IDEApplication.start(IDEApplication.java:152)
+	at org.eclipse.equinox.internal.app.EclipseAppHandle.run(EclipseAppHandle.java:203)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(EclipseAppLauncher.java:136)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(EclipseAppLauncher.java:104)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:401)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:255)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:659)
+	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:596)
+	at org.eclipse.equinox.launcher.Main.run(Main.java:1467)
+
+!ENTRY org.eclipse.ui.ide 4 4 2022-08-08 14:06:52.384
+!MESSAGE Not properly disposed SWT resource
+!STACK 0
+java.lang.Error: SWT Resource was not properly disposed
+	at org.eclipse.swt.graphics.Resource.initNonDisposeTracking(Resource.java:172)
+	at org.eclipse.swt.graphics.Resource.<init>(Resource.java:120)
+	at org.eclipse.swt.graphics.Image.<init>(Image.java:683)
+	at org.eclipse.jface.resource.URLImageDescriptor.createImage(URLImageDescriptor.java:274)
+	at org.eclipse.jface.resource.ImageDescriptor.createImage(ImageDescriptor.java:287)
+	at org.eclipse.jface.resource.ImageDescriptor.createImage(ImageDescriptor.java:265)
+	at org.testng.eclipse.ui.AbstractTab.initImages(AbstractTab.java:499)
+	at org.testng.eclipse.ui.AbstractTab.createTabControl(AbstractTab.java:166)
+	at org.testng.eclipse.ui.TestRunnerViewPart.createTabControl(TestRunnerViewPart.java:724)
+	at org.testng.eclipse.ui.TestRunnerViewPart.loadTestRunTabs(TestRunnerViewPart.java:715)
+	at org.testng.eclipse.ui.TestRunnerViewPart.createTestRunTabs(TestRunnerViewPart.java:675)
+	at org.testng.eclipse.ui.TestRunnerViewPart.createPartControl(TestRunnerViewPart.java:801)
+	at org.eclipse.ui.internal.e4.compatibility.CompatibilityPart.createPartControl(CompatibilityPart.java:158)
+	at org.eclipse.ui.internal.e4.compatibility.CompatibilityView.createPartControl(CompatibilityView.java:155)
+	at org.eclipse.ui.internal.e4.compatibility.CompatibilityPart.create(CompatibilityPart.java:365)
+	at jdk.internal.reflect.GeneratedMethodAccessor82.invoke(Unknown Source)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.eclipse.e4.core.internal.di.MethodRequestor.execute(MethodRequestor.java:58)
+	at org.eclipse.e4.core.internal.di.InjectorImpl.processAnnotated(InjectorImpl.java:995)
+	at org.eclipse.e4.core.internal.di.InjectorImpl.processAnnotated(InjectorImpl.java:960)
+	at org.eclipse.e4.core.internal.di.InjectorImpl.internalInject(InjectorImpl.java:140)
+	at org.eclipse.e4.core.internal.di.InjectorImpl.internalMake(InjectorImpl.java:403)
+	at org.eclipse.e4.core.internal.di.InjectorImpl.make(InjectorImpl.java:330)
+	at org.eclipse.e4.core.contexts.ContextInjectionFactory.make(ContextInjectionFactory.java:202)
+	at org.eclipse.e4.ui.internal.workbench.ReflectionContributionFactory.createFromBundle(ReflectionContributionFactory.java:91)
+	at org.eclipse.e4.ui.internal.workbench.ReflectionContributionFactory.doCreate(ReflectionContributionFactory.java:60)
+	at org.eclipse.e4.ui.internal.workbench.ReflectionContributionFactory.create(ReflectionContributionFactory.java:42)
+	at org.eclipse.e4.ui.workbench.renderers.swt.ContributedPartRenderer.createWidget(ContributedPartRenderer.java:132)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.createWidget(PartRenderingEngine.java:994)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.safeCreateGui(PartRenderingEngine.java:658)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$1.run(PartRenderingEngine.java:543)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:45)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.createGui(PartRenderingEngine.java:527)
+	at org.eclipse.e4.ui.workbench.renderers.swt.ElementReferenceRenderer.createWidget(ElementReferenceRenderer.java:73)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.createWidget(PartRenderingEngine.java:994)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.safeCreateGui(PartRenderingEngine.java:658)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.safeCreateGui(PartRenderingEngine.java:762)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$2.run(PartRenderingEngine.java:727)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:45)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.createGui(PartRenderingEngine.java:711)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.subscribeTopicToBeRendered(PartRenderingEngine.java:161)
+	at jdk.internal.reflect.GeneratedMethodAccessor79.invoke(Unknown Source)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.eclipse.e4.core.internal.di.MethodRequestor.execute(MethodRequestor.java:58)
+	at org.eclipse.e4.core.di.internal.extensions.EventObjectSupplier$DIEventHandler.handleEvent(EventObjectSupplier.java:92)
+	at org.eclipse.equinox.internal.event.EventHandlerWrapper.handleEvent(EventHandlerWrapper.java:205)
+	at org.eclipse.equinox.internal.event.EventHandlerTracker.dispatchEvent(EventHandlerTracker.java:203)
+	at org.eclipse.equinox.internal.event.EventHandlerTracker.dispatchEvent(EventHandlerTracker.java:1)
+	at org.eclipse.osgi.framework.eventmgr.EventManager.dispatchEvent(EventManager.java:228)
+	at org.eclipse.osgi.framework.eventmgr.ListenerQueue.dispatchEventSynchronous(ListenerQueue.java:151)
+	at org.eclipse.equinox.internal.event.EventAdminImpl.dispatchEvent(EventAdminImpl.java:133)
+	at org.eclipse.equinox.internal.event.EventAdminImpl.sendEvent(EventAdminImpl.java:75)
+	at org.eclipse.equinox.internal.event.EventComponent.sendEvent(EventComponent.java:44)
+	at org.eclipse.e4.ui.services.internal.events.EventBroker.send(EventBroker.java:55)
+	at org.eclipse.e4.ui.internal.workbench.UIEventPublisher.notifyChanged(UIEventPublisher.java:63)
+	at org.eclipse.emf.common.notify.impl.BasicNotifierImpl.eNotify(BasicNotifierImpl.java:424)
+	at org.eclipse.e4.ui.model.application.ui.impl.UIElementImpl.setToBeRendered(UIElementImpl.java:314)
+	at org.eclipse.e4.ui.internal.workbench.ModelServiceImpl.showElementInWindow(ModelServiceImpl.java:655)
+	at org.eclipse.e4.ui.internal.workbench.ModelServiceImpl.bringToTop(ModelServiceImpl.java:624)
+	at org.eclipse.e4.ui.internal.workbench.PartServiceImpl.delegateBringToTop(PartServiceImpl.java:786)
+	at org.eclipse.e4.ui.internal.workbench.PartServiceImpl.activate(PartServiceImpl.java:757)
+	at org.eclipse.e4.ui.internal.workbench.PartServiceImpl.activate(PartServiceImpl.java:679)
+	at org.eclipse.e4.ui.internal.workbench.PartServiceImpl.activate(PartServiceImpl.java:674)
+	at org.eclipse.e4.ui.internal.workbench.PartServiceImpl.showPart(PartServiceImpl.java:1251)
+	at org.eclipse.ui.internal.WorkbenchPage.showPart(WorkbenchPage.java:1252)
+	at org.eclipse.ui.internal.WorkbenchPage.busyShowView(WorkbenchPage.java:1240)
+	at org.eclipse.ui.internal.WorkbenchPage.lambda$11(WorkbenchPage.java:4249)
+	at org.eclipse.swt.custom.BusyIndicator.showWhile(BusyIndicator.java:74)
+	at org.eclipse.ui.internal.WorkbenchPage.showView(WorkbenchPage.java:4247)
+	at org.eclipse.ui.internal.WorkbenchPage.showView(WorkbenchPage.java:4229)
+	at org.testng.eclipse.TestNGPlugin.showTestRunnerViewPartInActivePage(TestNGPlugin.java:254)
+	at org.testng.eclipse.TestNGPlugin.connectTestRunner(TestNGPlugin.java:227)
+	at org.testng.eclipse.TestNGPlugin$2.run(TestNGPlugin.java:218)
+	at org.eclipse.swt.widgets.RunnableLock.run(RunnableLock.java:40)
+	at org.eclipse.swt.widgets.Synchronizer.runAsyncMessages(Synchronizer.java:185)
+	at org.eclipse.swt.widgets.Display.runAsyncMessages(Display.java:4029)
+	at org.eclipse.swt.widgets.Display.readAndDispatch(Display.java:3629)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$5.run(PartRenderingEngine.java:1150)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:338)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.run(PartRenderingEngine.java:1041)
+	at org.eclipse.e4.ui.internal.workbench.E4Workbench.createAndRunUI(E4Workbench.java:155)
+	at org.eclipse.ui.internal.Workbench.lambda$3(Workbench.java:644)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:338)
+	at org.eclipse.ui.internal.Workbench.createAndRunWorkbench(Workbench.java:551)
+	at org.eclipse.ui.PlatformUI.createAndRunWorkbench(PlatformUI.java:156)
+	at org.eclipse.ui.internal.ide.application.IDEApplication.start(IDEApplication.java:152)
+	at org.eclipse.equinox.internal.app.EclipseAppHandle.run(EclipseAppHandle.java:203)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(EclipseAppLauncher.java:136)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(EclipseAppLauncher.java:104)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:401)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:255)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:659)
+	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:596)
+	at org.eclipse.equinox.launcher.Main.run(Main.java:1467)
+!SESSION 2022-08-08 14:16:52.067 -----------------------------------------------
+eclipse.buildId=4.21.0.I20210906-0500
+java.version=17.0.1
+java.vendor=Eclipse Adoptium
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=pt_BR
+Framework arguments:  -product org.eclipse.epp.package.jee.product
+Command-line arguments:  -os win32 -ws win32 -arch x86_64 -product org.eclipse.epp.package.jee.product
+
+!ENTRY org.eclipse.oomph.p2.core 2 0 2022-08-08 14:17:03.980
+!MESSAGE Failed to register the thread safe credentials providers: 'java.util.Map org.eclipse.core.internal.runtime.AdapterManager.getFactories()'
+
+!ENTRY org.eclipse.jface 2 0 2022-08-08 14:18:22.837
+!MESSAGE Keybinding conflicts occurred.  They may interfere with normal accelerator operation.
+!SUBENTRY 1 org.eclipse.jface 2 0 2022-08-08 14:18:22.837
+!MESSAGE A conflict occurred for CTRL+SHIFT+T:
+Binding(CTRL+SHIFT+T,
+	ParameterizedCommand(Command(org.eclipse.jdt.ui.navigate.open.type,Open Type,
+		Open a type in a Java editor,
+		Category(org.eclipse.ui.category.navigate,Navigate,null,true),
+		org.eclipse.ui.internal.WorkbenchHandlerServiceHandler@58e0d1ac,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.contexts.window,,,system)
+Binding(CTRL+SHIFT+T,
+	ParameterizedCommand(Command(org.eclipse.lsp4e.symbolinworkspace,Go to Symbol in Workspace,
+		,
+		Category(org.eclipse.lsp4e.category,Language Servers,null,true),
+		org.eclipse.ui.internal.WorkbenchHandlerServiceHandler@7fba30fe,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.contexts.window,,,system)
+
+!ENTRY org.testng.eclipse 4 4 2022-08-08 14:18:39.797
+!MESSAGE Error
+!STACK 0
+java.util.concurrent.CancellationException
+	at org.eclipse.jface.internal.text.codemining.CancellationExceptionMonitor.isCanceled(CancellationExceptionMonitor.java:33)
+	at org.testng.eclipse.ui.codemining.TestCodeMiningProvider.processElements(TestCodeMiningProvider.java:80)
+	at org.testng.eclipse.ui.codemining.TestCodeMiningProvider.processElements(TestCodeMiningProvider.java:89)
+	at org.testng.eclipse.ui.codemining.TestCodeMiningProvider.mineForTests(TestCodeMiningProvider.java:67)
+	at org.testng.eclipse.ui.codemining.TestCodeMiningProvider.lambda$0(TestCodeMiningProvider.java:40)
+	at java.base/java.util.concurrent.CompletableFuture$AsyncSupply.run(CompletableFuture.java:1768)
+	at java.base/java.util.concurrent.CompletableFuture$AsyncSupply.exec(CompletableFuture.java:1760)
+	at java.base/java.util.concurrent.ForkJoinTask.doExec(ForkJoinTask.java:373)
+	at java.base/java.util.concurrent.ForkJoinPool$WorkQueue.topLevelExec(ForkJoinPool.java:1182)
+	at java.base/java.util.concurrent.ForkJoinPool.scan(ForkJoinPool.java:1655)
+	at java.base/java.util.concurrent.ForkJoinPool.runWorker(ForkJoinPool.java:1622)
+	at java.base/java.util.concurrent.ForkJoinWorkerThread.run(ForkJoinWorkerThread.java:165)
+
+!ENTRY org.eclipse.ui.navigator 2 0 2022-08-08 14:18:41.672
+!MESSAGE Can't find Navigator Content Descriptor with id: org.eclipse.jst.servlet.ui.EnhancedJavaRendering
+
+!ENTRY org.eclipse.ui.navigator 2 0 2022-08-08 14:18:41.672
+!MESSAGE Can't find Navigator Content Descriptor with id: org.eclipse.jst.servlet.ui.EnhancedJavaRendering
+
+!ENTRY org.eclipse.egit.ui 2 0 2022-08-08 14:18:41.900
+!MESSAGE Warning: The environment variable HOME is not set. The following directory will be used to store the Git
+user global configuration and to define the default location to store repositories: 'C:\Users\Jean Moreira'. If this is
+not correct please set the HOME environment variable and restart Eclipse. Otherwise Git for Windows and
+EGit might behave differently since they see different configuration options.
+This warning can be switched off on the Team > Git > Confirmations and Warnings preference page.
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2022-08-08 14:20:08.742
+!MESSAGE Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2022-08-08 14:20:08.753
+!MESSAGE Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.testng.eclipse 1 0 2022-08-08 14:20:16.967
+!MESSAGE [TestNGLaunchConfigurationDelegate] Launching:
+  Classpath: C:\Users\Jean Moreira\eclipse\jee-2021-09\eclipse\configuration\org.eclipse.osgi\938\0\.cp\lib\testng-remote.jar D:\Automação\Getnet\apiTesteComRestAssured\target\test-classes D:\Automação\Getnet\apiTesteComRestAssured\target\classes C:\Users\Jean Moreira\.p2\pool\plugins\org.junit_4.13.0.v20200204-1500.jar C:\Users\Jean Moreira\.p2\pool\plugins\org.hamcrest.core_1.3.0.v20180420-1519.jar C:\Users\Jean Moreira\.m2\repository\io\rest-assured\rest-assured\4.2.0\rest-assured-4.2.0.jar C:\Users\Jean Moreira\.m2\repository\org\codehaus\groovy\groovy\2.5.8\groovy-2.5.8.jar C:\Users\Jean Moreira\.m2\repository\org\codehaus\groovy\groovy-xml\2.5.8\groovy-xml-2.5.8.jar C:\Users\Jean Moreira\.m2\repository\org\apache\httpcomponents\httpclient\4.5.3\httpclient-4.5.3.jar C:\Users\Jean Moreira\.m2\repository\org\apache\httpcomponents\httpcore\4.4.6\httpcore-4.4.6.jar C:\Users\Jean Moreira\.m2\repository\commons-logging\commons-logging\1.2\commons-logging-1.2.jar C:\Users\Jean Moreira\.m2\repository\commons-codec\commons-codec\1.9\commons-codec-1.9.jar C:\Users\Jean Moreira\.m2\repository\org\apache\httpcomponents\httpmime\4.5.3\httpmime-4.5.3.jar C:\Users\Jean Moreira\.m2\repository\org\hamcrest\hamcrest\2.1\hamcrest-2.1.jar C:\Users\Jean Moreira\.m2\repository\org\ccil\cowan\tagsoup\tagsoup\1.2.1\tagsoup-1.2.1.jar C:\Users\Jean Moreira\.m2\repository\io\rest-assured\json-path\4.2.0\json-path-4.2.0.jar C:\Users\Jean Moreira\.m2\repository\org\codehaus\groovy\groovy-json\2.5.8\groovy-json-2.5.8.jar C:\Users\Jean Moreira\.m2\repository\io\rest-assured\rest-assured-common\4.2.0\rest-assured-common-4.2.0.jar C:\Users\Jean Moreira\.m2\repository\io\rest-assured\xml-path\4.2.0\xml-path-4.2.0.jar C:\Users\Jean Moreira\.m2\repository\org\apache\commons\commons-lang3\3.4\commons-lang3-3.4.jar C:\Users\Jean Moreira\.m2\repository\jakarta\xml\bind\jakarta.xml.bind-api\2.3.2\jakarta.xml.bind-api-2.3.2.jar C:\Users\Jean Moreira\.m2\repository\jakarta\activation\jakarta.activation-api\1.2.1\jakarta.activation-api-1.2.1.jar C:\Users\Jean Moreira\.m2\repository\com\sun\xml\bind\jaxb-osgi\2.3.0.1\jaxb-osgi-2.3.0.1.jar C:\Users\Jean Moreira\.m2\repository\org\apache\sling\org.apache.sling.javax.activation\0.1.0\org.apache.sling.javax.activation-0.1.0.jar C:\Users\Jean Moreira\.m2\repository\javax\activation\activation\1.1.1\activation-1.1.1.jar C:\Users\Jean Moreira\.m2\repository\org\testng\testng\7.1.0\testng-7.1.0.jar C:\Users\Jean Moreira\.m2\repository\com\beust\jcommander\1.72\jcommander-1.72.jar C:\Users\Jean Moreira\.m2\repository\com\google\inject\guice\4.1.0\guice-4.1.0-no_aop.jar C:\Users\Jean Moreira\.m2\repository\javax\inject\javax.inject\1\javax.inject-1.jar C:\Users\Jean Moreira\.m2\repository\aopalliance\aopalliance\1.0\aopalliance-1.0.jar C:\Users\Jean Moreira\.m2\repository\com\google\guava\guava\19.0\guava-19.0.jar C:\Users\Jean Moreira\.m2\repository\org\yaml\snakeyaml\1.21\snakeyaml-1.21.jar
+  VMArgs:    -ea
+  Class:     org.testng.remote.RemoteTestNG
+  Args:      -serport 50765 -protocol json -d D:\Automação\Getnet\apiTesteComRestAssured\test-output C:\Users\JEANMO~1\AppData\Local\Temp\testng-eclipse--1040760133\testng-customsuite.xml
+java -ea -classpath C:\Users\Jean Moreira\eclipse\jee-2021-09\eclipse\configuration\org.eclipse.osgi\938\0\.cp\lib\testng-remote.jar:D:\Automação\Getnet\apiTesteComRestAssured\target\test-classes:D:\Automação\Getnet\apiTesteComRestAssured\target\classes:C:\Users\Jean Moreira\.p2\pool\plugins\org.junit_4.13.0.v20200204-1500.jar:C:\Users\Jean Moreira\.p2\pool\plugins\org.hamcrest.core_1.3.0.v20180420-1519.jar:C:\Users\Jean Moreira\.m2\repository\io\rest-assured\rest-assured\4.2.0\rest-assured-4.2.0.jar:C:\Users\Jean Moreira\.m2\repository\org\codehaus\groovy\groovy\2.5.8\groovy-2.5.8.jar:C:\Users\Jean Moreira\.m2\repository\org\codehaus\groovy\groovy-xml\2.5.8\groovy-xml-2.5.8.jar:C:\Users\Jean Moreira\.m2\repository\org\apache\httpcomponents\httpclient\4.5.3\httpclient-4.5.3.jar:C:\Users\Jean Moreira\.m2\repository\org\apache\httpcomponents\httpcore\4.4.6\httpcore-4.4.6.jar:C:\Users\Jean Moreira\.m2\repository\commons-logging\commons-logging\1.2\commons-logging-1.2.jar:C:\Users\Jean Moreira\.m2\repository\commons-codec\commons-codec\1.9\commons-codec-1.9.jar:C:\Users\Jean Moreira\.m2\repository\org\apache\httpcomponents\httpmime\4.5.3\httpmime-4.5.3.jar:C:\Users\Jean Moreira\.m2\repository\org\hamcrest\hamcrest\2.1\hamcrest-2.1.jar:C:\Users\Jean Moreira\.m2\repository\org\ccil\cowan\tagsoup\tagsoup\1.2.1\tagsoup-1.2.1.jar:C:\Users\Jean Moreira\.m2\repository\io\rest-assured\json-path\4.2.0\json-path-4.2.0.jar:C:\Users\Jean Moreira\.m2\repository\org\codehaus\groovy\groovy-json\2.5.8\groovy-json-2.5.8.jar:C:\Users\Jean Moreira\.m2\repository\io\rest-assured\rest-assured-common\4.2.0\rest-assured-common-4.2.0.jar:C:\Users\Jean Moreira\.m2\repository\io\rest-assured\xml-path\4.2.0\xml-path-4.2.0.jar:C:\Users\Jean Moreira\.m2\repository\org\apache\commons\commons-lang3\3.4\commons-lang3-3.4.jar:C:\Users\Jean Moreira\.m2\repository\jakarta\xml\bind\jakarta.xml.bind-api\2.3.2\jakarta.xml.bind-api-2.3.2.jar:C:\Users\Jean Moreira\.m2\repository\jakarta\activation\jakarta.activation-api\1.2.1\jakarta.activation-api-1.2.1.jar:C:\Users\Jean Moreira\.m2\repository\com\sun\xml\bind\jaxb-osgi\2.3.0.1\jaxb-osgi-2.3.0.1.jar:C:\Users\Jean Moreira\.m2\repository\org\apache\sling\org.apache.sling.javax.activation\0.1.0\org.apache.sling.javax.activation-0.1.0.jar:C:\Users\Jean Moreira\.m2\repository\javax\activation\activation\1.1.1\activation-1.1.1.jar:C:\Users\Jean Moreira\.m2\repository\org\testng\testng\7.1.0\testng-7.1.0.jar:C:\Users\Jean Moreira\.m2\repository\com\beust\jcommander\1.72\jcommander-1.72.jar:C:\Users\Jean Moreira\.m2\repository\com\google\inject\guice\4.1.0\guice-4.1.0-no_aop.jar:C:\Users\Jean Moreira\.m2\repository\javax\inject\javax.inject\1\javax.inject-1.jar:C:\Users\Jean Moreira\.m2\repository\aopalliance\aopalliance\1.0\aopalliance-1.0.jar:C:\Users\Jean Moreira\.m2\repository\com\google\guava\guava\19.0\guava-19.0.jar:C:\Users\Jean Moreira\.m2\repository\org\yaml\snakeyaml\1.21\snakeyaml-1.21.jar org.testng.remote.RemoteTestNG -serport 50765 -protocol json -d D:\Automação\Getnet\apiTesteComRestAssured\test-output C:\Users\JEANMO~1\AppData\Local\Temp\testng-eclipse--1040760133\testng-customsuite.xml
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2022-08-08 14:20:50.949
+!MESSAGE Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2022-08-08 14:20:50.957
+!MESSAGE Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.testng.eclipse 1 0 2022-08-08 14:21:00.691
+!MESSAGE [TestNGLaunchConfigurationDelegate] Launching:
+  Classpath: C:\Users\Jean Moreira\eclipse\jee-2021-09\eclipse\configuration\org.eclipse.osgi\938\0\.cp\lib\testng-remote.jar D:\Automação\Getnet\apiTesteComRestAssured\target\test-classes D:\Automação\Getnet\apiTesteComRestAssured\target\classes C:\Users\Jean Moreira\.p2\pool\plugins\org.junit_4.13.0.v20200204-1500.jar C:\Users\Jean Moreira\.p2\pool\plugins\org.hamcrest.core_1.3.0.v20180420-1519.jar C:\Users\Jean Moreira\.m2\repository\io\rest-assured\rest-assured\4.2.0\rest-assured-4.2.0.jar C:\Users\Jean Moreira\.m2\repository\org\codehaus\groovy\groovy\2.5.8\groovy-2.5.8.jar C:\Users\Jean Moreira\.m2\repository\org\codehaus\groovy\groovy-xml\2.5.8\groovy-xml-2.5.8.jar C:\Users\Jean Moreira\.m2\repository\org\apache\httpcomponents\httpclient\4.5.3\httpclient-4.5.3.jar C:\Users\Jean Moreira\.m2\repository\org\apache\httpcomponents\httpcore\4.4.6\httpcore-4.4.6.jar C:\Users\Jean Moreira\.m2\repository\commons-logging\commons-logging\1.2\commons-logging-1.2.jar C:\Users\Jean Moreira\.m2\repository\commons-codec\commons-codec\1.9\commons-codec-1.9.jar C:\Users\Jean Moreira\.m2\repository\org\apache\httpcomponents\httpmime\4.5.3\httpmime-4.5.3.jar C:\Users\Jean Moreira\.m2\repository\org\hamcrest\hamcrest\2.1\hamcrest-2.1.jar C:\Users\Jean Moreira\.m2\repository\org\ccil\cowan\tagsoup\tagsoup\1.2.1\tagsoup-1.2.1.jar C:\Users\Jean Moreira\.m2\repository\io\rest-assured\json-path\4.2.0\json-path-4.2.0.jar C:\Users\Jean Moreira\.m2\repository\org\codehaus\groovy\groovy-json\2.5.8\groovy-json-2.5.8.jar C:\Users\Jean Moreira\.m2\repository\io\rest-assured\rest-assured-common\4.2.0\rest-assured-common-4.2.0.jar C:\Users\Jean Moreira\.m2\repository\io\rest-assured\xml-path\4.2.0\xml-path-4.2.0.jar C:\Users\Jean Moreira\.m2\repository\org\apache\commons\commons-lang3\3.4\commons-lang3-3.4.jar C:\Users\Jean Moreira\.m2\repository\jakarta\xml\bind\jakarta.xml.bind-api\2.3.2\jakarta.xml.bind-api-2.3.2.jar C:\Users\Jean Moreira\.m2\repository\jakarta\activation\jakarta.activation-api\1.2.1\jakarta.activation-api-1.2.1.jar C:\Users\Jean Moreira\.m2\repository\com\sun\xml\bind\jaxb-osgi\2.3.0.1\jaxb-osgi-2.3.0.1.jar C:\Users\Jean Moreira\.m2\repository\org\apache\sling\org.apache.sling.javax.activation\0.1.0\org.apache.sling.javax.activation-0.1.0.jar C:\Users\Jean Moreira\.m2\repository\javax\activation\activation\1.1.1\activation-1.1.1.jar C:\Users\Jean Moreira\.m2\repository\org\testng\testng\7.1.0\testng-7.1.0.jar C:\Users\Jean Moreira\.m2\repository\com\beust\jcommander\1.72\jcommander-1.72.jar C:\Users\Jean Moreira\.m2\repository\com\google\inject\guice\4.1.0\guice-4.1.0-no_aop.jar C:\Users\Jean Moreira\.m2\repository\javax\inject\javax.inject\1\javax.inject-1.jar C:\Users\Jean Moreira\.m2\repository\aopalliance\aopalliance\1.0\aopalliance-1.0.jar C:\Users\Jean Moreira\.m2\repository\com\google\guava\guava\19.0\guava-19.0.jar C:\Users\Jean Moreira\.m2\repository\org\yaml\snakeyaml\1.21\snakeyaml-1.21.jar
+  VMArgs:    -ea
+  Class:     org.testng.remote.RemoteTestNG
+  Args:      -serport 50778 -protocol json -d D:\Automação\Getnet\apiTesteComRestAssured\test-output C:\Users\JEANMO~1\AppData\Local\Temp\testng-eclipse--873116881\testng-customsuite.xml
+java -ea -classpath C:\Users\Jean Moreira\eclipse\jee-2021-09\eclipse\configuration\org.eclipse.osgi\938\0\.cp\lib\testng-remote.jar:D:\Automação\Getnet\apiTesteComRestAssured\target\test-classes:D:\Automação\Getnet\apiTesteComRestAssured\target\classes:C:\Users\Jean Moreira\.p2\pool\plugins\org.junit_4.13.0.v20200204-1500.jar:C:\Users\Jean Moreira\.p2\pool\plugins\org.hamcrest.core_1.3.0.v20180420-1519.jar:C:\Users\Jean Moreira\.m2\repository\io\rest-assured\rest-assured\4.2.0\rest-assured-4.2.0.jar:C:\Users\Jean Moreira\.m2\repository\org\codehaus\groovy\groovy\2.5.8\groovy-2.5.8.jar:C:\Users\Jean Moreira\.m2\repository\org\codehaus\groovy\groovy-xml\2.5.8\groovy-xml-2.5.8.jar:C:\Users\Jean Moreira\.m2\repository\org\apache\httpcomponents\httpclient\4.5.3\httpclient-4.5.3.jar:C:\Users\Jean Moreira\.m2\repository\org\apache\httpcomponents\httpcore\4.4.6\httpcore-4.4.6.jar:C:\Users\Jean Moreira\.m2\repository\commons-logging\commons-logging\1.2\commons-logging-1.2.jar:C:\Users\Jean Moreira\.m2\repository\commons-codec\commons-codec\1.9\commons-codec-1.9.jar:C:\Users\Jean Moreira\.m2\repository\org\apache\httpcomponents\httpmime\4.5.3\httpmime-4.5.3.jar:C:\Users\Jean Moreira\.m2\repository\org\hamcrest\hamcrest\2.1\hamcrest-2.1.jar:C:\Users\Jean Moreira\.m2\repository\org\ccil\cowan\tagsoup\tagsoup\1.2.1\tagsoup-1.2.1.jar:C:\Users\Jean Moreira\.m2\repository\io\rest-assured\json-path\4.2.0\json-path-4.2.0.jar:C:\Users\Jean Moreira\.m2\repository\org\codehaus\groovy\groovy-json\2.5.8\groovy-json-2.5.8.jar:C:\Users\Jean Moreira\.m2\repository\io\rest-assured\rest-assured-common\4.2.0\rest-assured-common-4.2.0.jar:C:\Users\Jean Moreira\.m2\repository\io\rest-assured\xml-path\4.2.0\xml-path-4.2.0.jar:C:\Users\Jean Moreira\.m2\repository\org\apache\commons\commons-lang3\3.4\commons-lang3-3.4.jar:C:\Users\Jean Moreira\.m2\repository\jakarta\xml\bind\jakarta.xml.bind-api\2.3.2\jakarta.xml.bind-api-2.3.2.jar:C:\Users\Jean Moreira\.m2\repository\jakarta\activation\jakarta.activation-api\1.2.1\jakarta.activation-api-1.2.1.jar:C:\Users\Jean Moreira\.m2\repository\com\sun\xml\bind\jaxb-osgi\2.3.0.1\jaxb-osgi-2.3.0.1.jar:C:\Users\Jean Moreira\.m2\repository\org\apache\sling\org.apache.sling.javax.activation\0.1.0\org.apache.sling.javax.activation-0.1.0.jar:C:\Users\Jean Moreira\.m2\repository\javax\activation\activation\1.1.1\activation-1.1.1.jar:C:\Users\Jean Moreira\.m2\repository\org\testng\testng\7.1.0\testng-7.1.0.jar:C:\Users\Jean Moreira\.m2\repository\com\beust\jcommander\1.72\jcommander-1.72.jar:C:\Users\Jean Moreira\.m2\repository\com\google\inject\guice\4.1.0\guice-4.1.0-no_aop.jar:C:\Users\Jean Moreira\.m2\repository\javax\inject\javax.inject\1\javax.inject-1.jar:C:\Users\Jean Moreira\.m2\repository\aopalliance\aopalliance\1.0\aopalliance-1.0.jar:C:\Users\Jean Moreira\.m2\repository\com\google\guava\guava\19.0\guava-19.0.jar:C:\Users\Jean Moreira\.m2\repository\org\yaml\snakeyaml\1.21\snakeyaml-1.21.jar org.testng.remote.RemoteTestNG -serport 50778 -protocol json -d D:\Automação\Getnet\apiTesteComRestAssured\test-output C:\Users\JEANMO~1\AppData\Local\Temp\testng-eclipse--873116881\testng-customsuite.xml
+
+!ENTRY org.testng.eclipse 1 0 2022-08-08 14:25:08.043
+!MESSAGE [TestNGLaunchConfigurationDelegate] Launching:
+  Classpath: C:\Users\Jean Moreira\eclipse\jee-2021-09\eclipse\configuration\org.eclipse.osgi\938\0\.cp\lib\testng-remote.jar D:\Automação\Getnet\apiTesteComRestAssured\target\test-classes D:\Automação\Getnet\apiTesteComRestAssured\target\classes C:\Users\Jean Moreira\.p2\pool\plugins\org.junit_4.13.0.v20200204-1500.jar C:\Users\Jean Moreira\.p2\pool\plugins\org.hamcrest.core_1.3.0.v20180420-1519.jar C:\Users\Jean Moreira\.m2\repository\io\rest-assured\rest-assured\4.2.0\rest-assured-4.2.0.jar C:\Users\Jean Moreira\.m2\repository\org\codehaus\groovy\groovy\2.5.8\groovy-2.5.8.jar C:\Users\Jean Moreira\.m2\repository\org\codehaus\groovy\groovy-xml\2.5.8\groovy-xml-2.5.8.jar C:\Users\Jean Moreira\.m2\repository\org\apache\httpcomponents\httpclient\4.5.3\httpclient-4.5.3.jar C:\Users\Jean Moreira\.m2\repository\org\apache\httpcomponents\httpcore\4.4.6\httpcore-4.4.6.jar C:\Users\Jean Moreira\.m2\repository\commons-logging\commons-logging\1.2\commons-logging-1.2.jar C:\Users\Jean Moreira\.m2\repository\commons-codec\commons-codec\1.9\commons-codec-1.9.jar C:\Users\Jean Moreira\.m2\repository\org\apache\httpcomponents\httpmime\4.5.3\httpmime-4.5.3.jar C:\Users\Jean Moreira\.m2\repository\org\hamcrest\hamcrest\2.1\hamcrest-2.1.jar C:\Users\Jean Moreira\.m2\repository\org\ccil\cowan\tagsoup\tagsoup\1.2.1\tagsoup-1.2.1.jar C:\Users\Jean Moreira\.m2\repository\io\rest-assured\json-path\4.2.0\json-path-4.2.0.jar C:\Users\Jean Moreira\.m2\repository\org\codehaus\groovy\groovy-json\2.5.8\groovy-json-2.5.8.jar C:\Users\Jean Moreira\.m2\repository\io\rest-assured\rest-assured-common\4.2.0\rest-assured-common-4.2.0.jar C:\Users\Jean Moreira\.m2\repository\io\rest-assured\xml-path\4.2.0\xml-path-4.2.0.jar C:\Users\Jean Moreira\.m2\repository\org\apache\commons\commons-lang3\3.4\commons-lang3-3.4.jar C:\Users\Jean Moreira\.m2\repository\jakarta\xml\bind\jakarta.xml.bind-api\2.3.2\jakarta.xml.bind-api-2.3.2.jar C:\Users\Jean Moreira\.m2\repository\jakarta\activation\jakarta.activation-api\1.2.1\jakarta.activation-api-1.2.1.jar C:\Users\Jean Moreira\.m2\repository\com\sun\xml\bind\jaxb-osgi\2.3.0.1\jaxb-osgi-2.3.0.1.jar C:\Users\Jean Moreira\.m2\repository\org\apache\sling\org.apache.sling.javax.activation\0.1.0\org.apache.sling.javax.activation-0.1.0.jar C:\Users\Jean Moreira\.m2\repository\javax\activation\activation\1.1.1\activation-1.1.1.jar C:\Users\Jean Moreira\.m2\repository\org\testng\testng\7.1.0\testng-7.1.0.jar C:\Users\Jean Moreira\.m2\repository\com\beust\jcommander\1.72\jcommander-1.72.jar C:\Users\Jean Moreira\.m2\repository\com\google\inject\guice\4.1.0\guice-4.1.0-no_aop.jar C:\Users\Jean Moreira\.m2\repository\javax\inject\javax.inject\1\javax.inject-1.jar C:\Users\Jean Moreira\.m2\repository\aopalliance\aopalliance\1.0\aopalliance-1.0.jar C:\Users\Jean Moreira\.m2\repository\com\google\guava\guava\19.0\guava-19.0.jar C:\Users\Jean Moreira\.m2\repository\org\yaml\snakeyaml\1.21\snakeyaml-1.21.jar
+  VMArgs:    -ea
+  Class:     org.testng.remote.RemoteTestNG
+  Args:      -serport 50825 -protocol json -d D:\Automação\Getnet\apiTesteComRestAssured\test-output C:\Users\JEANMO~1\AppData\Local\Temp\testng-eclipse-29456421\testng-customsuite.xml
+java -ea -classpath C:\Users\Jean Moreira\eclipse\jee-2021-09\eclipse\configuration\org.eclipse.osgi\938\0\.cp\lib\testng-remote.jar:D:\Automação\Getnet\apiTesteComRestAssured\target\test-classes:D:\Automação\Getnet\apiTesteComRestAssured\target\classes:C:\Users\Jean Moreira\.p2\pool\plugins\org.junit_4.13.0.v20200204-1500.jar:C:\Users\Jean Moreira\.p2\pool\plugins\org.hamcrest.core_1.3.0.v20180420-1519.jar:C:\Users\Jean Moreira\.m2\repository\io\rest-assured\rest-assured\4.2.0\rest-assured-4.2.0.jar:C:\Users\Jean Moreira\.m2\repository\org\codehaus\groovy\groovy\2.5.8\groovy-2.5.8.jar:C:\Users\Jean Moreira\.m2\repository\org\codehaus\groovy\groovy-xml\2.5.8\groovy-xml-2.5.8.jar:C:\Users\Jean Moreira\.m2\repository\org\apache\httpcomponents\httpclient\4.5.3\httpclient-4.5.3.jar:C:\Users\Jean Moreira\.m2\repository\org\apache\httpcomponents\httpcore\4.4.6\httpcore-4.4.6.jar:C:\Users\Jean Moreira\.m2\repository\commons-logging\commons-logging\1.2\commons-logging-1.2.jar:C:\Users\Jean Moreira\.m2\repository\commons-codec\commons-codec\1.9\commons-codec-1.9.jar:C:\Users\Jean Moreira\.m2\repository\org\apache\httpcomponents\httpmime\4.5.3\httpmime-4.5.3.jar:C:\Users\Jean Moreira\.m2\repository\org\hamcrest\hamcrest\2.1\hamcrest-2.1.jar:C:\Users\Jean Moreira\.m2\repository\org\ccil\cowan\tagsoup\tagsoup\1.2.1\tagsoup-1.2.1.jar:C:\Users\Jean Moreira\.m2\repository\io\rest-assured\json-path\4.2.0\json-path-4.2.0.jar:C:\Users\Jean Moreira\.m2\repository\org\codehaus\groovy\groovy-json\2.5.8\groovy-json-2.5.8.jar:C:\Users\Jean Moreira\.m2\repository\io\rest-assured\rest-assured-common\4.2.0\rest-assured-common-4.2.0.jar:C:\Users\Jean Moreira\.m2\repository\io\rest-assured\xml-path\4.2.0\xml-path-4.2.0.jar:C:\Users\Jean Moreira\.m2\repository\org\apache\commons\commons-lang3\3.4\commons-lang3-3.4.jar:C:\Users\Jean Moreira\.m2\repository\jakarta\xml\bind\jakarta.xml.bind-api\2.3.2\jakarta.xml.bind-api-2.3.2.jar:C:\Users\Jean Moreira\.m2\repository\jakarta\activation\jakarta.activation-api\1.2.1\jakarta.activation-api-1.2.1.jar:C:\Users\Jean Moreira\.m2\repository\com\sun\xml\bind\jaxb-osgi\2.3.0.1\jaxb-osgi-2.3.0.1.jar:C:\Users\Jean Moreira\.m2\repository\org\apache\sling\org.apache.sling.javax.activation\0.1.0\org.apache.sling.javax.activation-0.1.0.jar:C:\Users\Jean Moreira\.m2\repository\javax\activation\activation\1.1.1\activation-1.1.1.jar:C:\Users\Jean Moreira\.m2\repository\org\testng\testng\7.1.0\testng-7.1.0.jar:C:\Users\Jean Moreira\.m2\repository\com\beust\jcommander\1.72\jcommander-1.72.jar:C:\Users\Jean Moreira\.m2\repository\com\google\inject\guice\4.1.0\guice-4.1.0-no_aop.jar:C:\Users\Jean Moreira\.m2\repository\javax\inject\javax.inject\1\javax.inject-1.jar:C:\Users\Jean Moreira\.m2\repository\aopalliance\aopalliance\1.0\aopalliance-1.0.jar:C:\Users\Jean Moreira\.m2\repository\com\google\guava\guava\19.0\guava-19.0.jar:C:\Users\Jean Moreira\.m2\repository\org\yaml\snakeyaml\1.21\snakeyaml-1.21.jar org.testng.remote.RemoteTestNG -serport 50825 -protocol json -d D:\Automação\Getnet\apiTesteComRestAssured\test-output C:\Users\JEANMO~1\AppData\Local\Temp\testng-eclipse-29456421\testng-customsuite.xml
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2022-08-08 14:26:47.347
+!MESSAGE Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2022-08-08 14:26:47.350
+!MESSAGE Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.testng.eclipse 1 0 2022-08-08 14:26:57.030
+!MESSAGE [TestNGLaunchConfigurationDelegate] Launching:
+  Classpath: C:\Users\Jean Moreira\eclipse\jee-2021-09\eclipse\configuration\org.eclipse.osgi\938\0\.cp\lib\testng-remote.jar D:\Automação\Getnet\apiTesteComRestAssured\target\test-classes D:\Automação\Getnet\apiTesteComRestAssured\target\classes C:\Users\Jean Moreira\.p2\pool\plugins\org.junit_4.13.0.v20200204-1500.jar C:\Users\Jean Moreira\.p2\pool\plugins\org.hamcrest.core_1.3.0.v20180420-1519.jar C:\Users\Jean Moreira\.m2\repository\io\rest-assured\rest-assured\4.2.0\rest-assured-4.2.0.jar C:\Users\Jean Moreira\.m2\repository\org\codehaus\groovy\groovy\2.5.8\groovy-2.5.8.jar C:\Users\Jean Moreira\.m2\repository\org\codehaus\groovy\groovy-xml\2.5.8\groovy-xml-2.5.8.jar C:\Users\Jean Moreira\.m2\repository\org\apache\httpcomponents\httpclient\4.5.3\httpclient-4.5.3.jar C:\Users\Jean Moreira\.m2\repository\org\apache\httpcomponents\httpcore\4.4.6\httpcore-4.4.6.jar C:\Users\Jean Moreira\.m2\repository\commons-logging\commons-logging\1.2\commons-logging-1.2.jar C:\Users\Jean Moreira\.m2\repository\commons-codec\commons-codec\1.9\commons-codec-1.9.jar C:\Users\Jean Moreira\.m2\repository\org\apache\httpcomponents\httpmime\4.5.3\httpmime-4.5.3.jar C:\Users\Jean Moreira\.m2\repository\org\hamcrest\hamcrest\2.1\hamcrest-2.1.jar C:\Users\Jean Moreira\.m2\repository\org\ccil\cowan\tagsoup\tagsoup\1.2.1\tagsoup-1.2.1.jar C:\Users\Jean Moreira\.m2\repository\io\rest-assured\json-path\4.2.0\json-path-4.2.0.jar C:\Users\Jean Moreira\.m2\repository\org\codehaus\groovy\groovy-json\2.5.8\groovy-json-2.5.8.jar C:\Users\Jean Moreira\.m2\repository\io\rest-assured\rest-assured-common\4.2.0\rest-assured-common-4.2.0.jar C:\Users\Jean Moreira\.m2\repository\io\rest-assured\xml-path\4.2.0\xml-path-4.2.0.jar C:\Users\Jean Moreira\.m2\repository\org\apache\commons\commons-lang3\3.4\commons-lang3-3.4.jar C:\Users\Jean Moreira\.m2\repository\jakarta\xml\bind\jakarta.xml.bind-api\2.3.2\jakarta.xml.bind-api-2.3.2.jar C:\Users\Jean Moreira\.m2\repository\jakarta\activation\jakarta.activation-api\1.2.1\jakarta.activation-api-1.2.1.jar C:\Users\Jean Moreira\.m2\repository\com\sun\xml\bind\jaxb-osgi\2.3.0.1\jaxb-osgi-2.3.0.1.jar C:\Users\Jean Moreira\.m2\repository\org\apache\sling\org.apache.sling.javax.activation\0.1.0\org.apache.sling.javax.activation-0.1.0.jar C:\Users\Jean Moreira\.m2\repository\javax\activation\activation\1.1.1\activation-1.1.1.jar C:\Users\Jean Moreira\.m2\repository\org\testng\testng\7.1.0\testng-7.1.0.jar C:\Users\Jean Moreira\.m2\repository\com\beust\jcommander\1.72\jcommander-1.72.jar C:\Users\Jean Moreira\.m2\repository\com\google\inject\guice\4.1.0\guice-4.1.0-no_aop.jar C:\Users\Jean Moreira\.m2\repository\javax\inject\javax.inject\1\javax.inject-1.jar C:\Users\Jean Moreira\.m2\repository\aopalliance\aopalliance\1.0\aopalliance-1.0.jar C:\Users\Jean Moreira\.m2\repository\com\google\guava\guava\19.0\guava-19.0.jar C:\Users\Jean Moreira\.m2\repository\org\yaml\snakeyaml\1.21\snakeyaml-1.21.jar
+  VMArgs:    -ea
+  Class:     org.testng.remote.RemoteTestNG
+  Args:      -serport 50839 -protocol json -d D:\Automação\Getnet\apiTesteComRestAssured\test-output C:\Users\JEANMO~1\AppData\Local\Temp\testng-eclipse-1509170043\testng-customsuite.xml
+java -ea -classpath C:\Users\Jean Moreira\eclipse\jee-2021-09\eclipse\configuration\org.eclipse.osgi\938\0\.cp\lib\testng-remote.jar:D:\Automação\Getnet\apiTesteComRestAssured\target\test-classes:D:\Automação\Getnet\apiTesteComRestAssured\target\classes:C:\Users\Jean Moreira\.p2\pool\plugins\org.junit_4.13.0.v20200204-1500.jar:C:\Users\Jean Moreira\.p2\pool\plugins\org.hamcrest.core_1.3.0.v20180420-1519.jar:C:\Users\Jean Moreira\.m2\repository\io\rest-assured\rest-assured\4.2.0\rest-assured-4.2.0.jar:C:\Users\Jean Moreira\.m2\repository\org\codehaus\groovy\groovy\2.5.8\groovy-2.5.8.jar:C:\Users\Jean Moreira\.m2\repository\org\codehaus\groovy\groovy-xml\2.5.8\groovy-xml-2.5.8.jar:C:\Users\Jean Moreira\.m2\repository\org\apache\httpcomponents\httpclient\4.5.3\httpclient-4.5.3.jar:C:\Users\Jean Moreira\.m2\repository\org\apache\httpcomponents\httpcore\4.4.6\httpcore-4.4.6.jar:C:\Users\Jean Moreira\.m2\repository\commons-logging\commons-logging\1.2\commons-logging-1.2.jar:C:\Users\Jean Moreira\.m2\repository\commons-codec\commons-codec\1.9\commons-codec-1.9.jar:C:\Users\Jean Moreira\.m2\repository\org\apache\httpcomponents\httpmime\4.5.3\httpmime-4.5.3.jar:C:\Users\Jean Moreira\.m2\repository\org\hamcrest\hamcrest\2.1\hamcrest-2.1.jar:C:\Users\Jean Moreira\.m2\repository\org\ccil\cowan\tagsoup\tagsoup\1.2.1\tagsoup-1.2.1.jar:C:\Users\Jean Moreira\.m2\repository\io\rest-assured\json-path\4.2.0\json-path-4.2.0.jar:C:\Users\Jean Moreira\.m2\repository\org\codehaus\groovy\groovy-json\2.5.8\groovy-json-2.5.8.jar:C:\Users\Jean Moreira\.m2\repository\io\rest-assured\rest-assured-common\4.2.0\rest-assured-common-4.2.0.jar:C:\Users\Jean Moreira\.m2\repository\io\rest-assured\xml-path\4.2.0\xml-path-4.2.0.jar:C:\Users\Jean Moreira\.m2\repository\org\apache\commons\commons-lang3\3.4\commons-lang3-3.4.jar:C:\Users\Jean Moreira\.m2\repository\jakarta\xml\bind\jakarta.xml.bind-api\2.3.2\jakarta.xml.bind-api-2.3.2.jar:C:\Users\Jean Moreira\.m2\repository\jakarta\activation\jakarta.activation-api\1.2.1\jakarta.activation-api-1.2.1.jar:C:\Users\Jean Moreira\.m2\repository\com\sun\xml\bind\jaxb-osgi\2.3.0.1\jaxb-osgi-2.3.0.1.jar:C:\Users\Jean Moreira\.m2\repository\org\apache\sling\org.apache.sling.javax.activation\0.1.0\org.apache.sling.javax.activation-0.1.0.jar:C:\Users\Jean Moreira\.m2\repository\javax\activation\activation\1.1.1\activation-1.1.1.jar:C:\Users\Jean Moreira\.m2\repository\org\testng\testng\7.1.0\testng-7.1.0.jar:C:\Users\Jean Moreira\.m2\repository\com\beust\jcommander\1.72\jcommander-1.72.jar:C:\Users\Jean Moreira\.m2\repository\com\google\inject\guice\4.1.0\guice-4.1.0-no_aop.jar:C:\Users\Jean Moreira\.m2\repository\javax\inject\javax.inject\1\javax.inject-1.jar:C:\Users\Jean Moreira\.m2\repository\aopalliance\aopalliance\1.0\aopalliance-1.0.jar:C:\Users\Jean Moreira\.m2\repository\com\google\guava\guava\19.0\guava-19.0.jar:C:\Users\Jean Moreira\.m2\repository\org\yaml\snakeyaml\1.21\snakeyaml-1.21.jar org.testng.remote.RemoteTestNG -serport 50839 -protocol json -d D:\Automação\Getnet\apiTesteComRestAssured\test-output C:\Users\JEANMO~1\AppData\Local\Temp\testng-eclipse-1509170043\testng-customsuite.xml

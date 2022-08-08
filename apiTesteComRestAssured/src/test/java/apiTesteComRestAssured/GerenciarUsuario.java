@@ -66,7 +66,7 @@ public class GerenciarUsuario {
 	@Test
 	public void patchAtualizaUsuario() {
 		
-		String url = "https://reqres.in/api/users/{4}";
+		String url = "https://reqres.in/api/users/4";
 		String contentType = "application/json";
 		String bodyData = "{\r\n"
 				+ "    \"name\": \"morpheus\",\r\n"
@@ -99,6 +99,7 @@ public class GerenciarUsuario {
 		Response response = RestAssured.get(url);		
 		Assert.assertEquals(response.getStatusCode(), 200, "Status Code Esperado");
 		String id = response.jsonPath().get("id");
+		System.out.println(id);
 		Assert.assertEquals(id, 4, "id Esperado");
 
 	}
